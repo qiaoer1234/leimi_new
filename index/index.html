@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/css/base.css">
+    <link type="text/css" href="style/css/style.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="style/js/tools.js"></script>
+    <script type="text/javascript" src="style/js/js.js"></script>
+
+    <script type="text/javascript" src="style/js/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="style/js/layer.js"></script>
+    <script type="text/javascript" src="style/js/public.js"></script>
+    <script type="text/javascript" src="style/js/jquery.SuperSlide.2.1.3.js"></script>
+    <title>主页</title>
+</head>
+<body>
+    <!-- nav start -->
+    <div class="nav bbox">
+        <div class="w_nav">
+            <a class="fl"><img class="logo" src="style/images/logo.png" alt="logo"></a>
+            <ul class="nav_tit fl">
+                <li><a href="">首页</a></li>
+                <li><a href="">委托购买</a></li>
+                <li><a href="">精选域名</a></li>
+                <li><a href="">域名评估</a></li>
+                <li><a href="">新闻中心</a></li>
+                <li><a href="">成功案例</a></li>
+                <li><a href="">关于我们</a></li>
+            </ul>
+            <ul class="nav_dz fr">
+                <li class="eng">
+                    <span class="ch">中</span>
+                    <span class="en">EN</span>
+                </li>
+            </ul>
+        </div>        
+    </div>
+    <!-- nav end -->
+    <!-- banner start -->
+    <div class="w_banner">
+        <div class="slider">
+            <div class="slideBox">
+                <div class="hd">
+                    <ul><li></li><li></li><li></li></ul>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li><a href="javascript:void(0);" target="_blank"><img  class="slider_img" src="style/images/banner1.png" alt="banner"></a></li>
+                        
+
+                        <li><a href="javascript:void(0);" target="_blank"><img  class="slider_img" src="style/images/banner2.png" alt="banner"></a></li>
+
+                        <li><a href="javascript:void(0);" target="_blank"><img  class="slider_img" src="style/images/banner3.png" alt="banner"></a></li>
+                        
+                    </ul>
+                </div>
+            </div>            
+        
+        </div>
+<script>
+$(function(){
+    jQuery(".slideBox").slide({
+        mainCell: ".bd ul",
+        effect: "fold",
+        autoPlay: true,
+        delayTime: 500
+    });    
+});
+</script>
+
+<!-- jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,delayTime:700}); -->
+
+        <div class="xq_form">
+            <ul class="tab_tit fl">
+                <li class="tab_gr bt0 on">我是个人</li>
+                <li class="tab_qy">我是企业</li>
+                <li class="tab_dz">进度查询</li>
+            </ul>
+            <ul class="tab_con bbox fl">
+                <!-- 个人 -->
+                <li class="person" style="display: block">
+                       
+                            <ul class="tab_con_ul">
+                                <li class="">
+                                    <span class="ul_t">有无目标域名</span>
+                                    <div class="lab_f fl">
+                                        <label><input type="radio" name="zt"> 有</label>
+                                        <label><input type="radio" name="zt"> 无</label>                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="ul_t">姓名</span>
+                                    <input class="lab_s fl" type="text" placeholder="请输入姓名">
+                                </li>                                
+                                <li>
+                                    <span class="ul_t">意向域名</span>
+                                    <input class="lab_s fl" type="text" placeholder="如 baidu.com">
+                                </li>
+                                <li>
+                                    <span class="ul_t">意向价格</span>
+                                    <div class="fl">
+                                        <input class="q_inp" type="text" placeholder="1000">
+                                        <span>-</span>
+                                        <input class="q_inp" type="text" placeholder="5000">
+                                        <span>元</span>
+                                    </div>
+                                </li>
+                                <li class="f_yzm">
+                                    <div class="lab_t fl">
+                                        <span class="ul_t">手机号</span>
+                                        <input type="text" placeholder="请输入手机号">                                        
+                                    </div>
+                                    <button class="yzm_btn fr">获取验证码</button>
+                                </li>
+                                <li>
+                                    <span class="ul_t">验证码</span>
+                                    <label class="lab_s fl"><input type="text" placeholder="请输入手机验证码"></label>
+                                </li>                             
+                                <li>
+                                    <button type="button" class="imm_btn">立即委托</button>
+                                </li>
+                            </ul>
+                       
+                </li>
+                <!-- 企业 -->
+                <li class="company" style="display: none;">
+                   
+                            <ul class="tab_con_ul">
+                                <li class="">
+                                    <span class="ul_t">有无目标域名</span>
+                                    <div class="lab_f fl">
+                                        <label><input type="radio" name="zt"> 有</label>
+                                        <label><input type="radio" name="zt"> 无</label>                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="ul_t">企业名称</span>
+                                    <input class="lab_s fl" type="text" placeholder="请输入公司名称">
+                                </li>                                 
+                                <li>
+                                    <span class="ul_t">意向域名</span>
+                                    <input class="lab_s fl" type="text" placeholder="如 baidu.com">
+                                </li>
+                                <li>
+                                    <span class="ul_t">意向价格</span>
+                                    <div class="fl">
+                                        <input class="q_inp" type="text" placeholder="1000">
+                                        <span>-</span>
+                                        <input class="q_inp" type="text" placeholder="5000">
+                                        <span>元</span>
+                                    </div>
+                                </li>
+                                <li class="f_yzm">
+                                    <div class="lab_t fl">
+                                        <span class="ul_t">手机号</span>
+                                        <input type="text" placeholder="请输入手机号">                                        
+                                    </div>
+                                    <button class="yzm_btn fr">获取验证码</button>
+                                </li>
+                                <li>
+                                    <span class="ul_t">验证码</span>
+                                    <label class="lab_s fl"><input type="text" placeholder="请输入手机验证码"></label>
+                                </li>   
+                                <li class="tips">我们会根据你的需求为您寻找最适合的域名</li>                             
+                                <li>
+                                    <button type="button" class="imm_btn">立即委托</button>
+                                </li>
+                            </ul>
+                    
+                </li>                
+                
+                <!-- 定制 -->
+                <li class="dingzhi" style="display: none;">
+                    
+                            <ul class="tab_con_ul">
+
+                                <li class="f_yzm">
+                                    <div class="lab_t fl">
+                                        <span class="ul_t">手机号</span>
+                                        <input type="text" placeholder="请输入手机号">                                        
+                                    </div>
+                                    <button class="yzm_btn fr">获取验证码</button>
+                                </li>
+                                <li>
+                                    <span class="ul_t">验证码</span>
+                                    <label class="lab_s fl"><input type="text" placeholder="请输入手机验证码"></label>
+                                </li>
+                                <li>
+                                    <button class="imm_btn">立即查询</button>
+                                </li>                                
+                                <li class="li_area">
+                                    <span class="ul_t bbox">查询结果：</span>
+                                    <textarea class="area bbox" placeholder=""></textarea>
+                                </li>                                                             
+
+                            </ul>
+                    
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- 我们的优势 start -->
+    <div class="w_good">
+        <div class="good">
+            <div class="index_tit">
+                <h3><img src="style/images/jjr_tit.png" alt="about-us"></h3>
+                <p class="tit_p">为什么选择我们？</p>
+            </div>
+            <div class="good_div">
+                <ul class="good_con bbox clear">
+                    <li>
+                        <p class="p1">强大背书</p>
+                        <p class="p2">聚名网、金米网兄弟平台，连续7年为30万+用户提供优质域名服务，累计成交域名70万+个，与国内外域名服务商和各大域名交易平台有密切合作，拥有多位经验丰富的域名经纪专家，最大程度满足您的需求。</p>
+                    </li>
+                    <li>
+                        <p class="p1">专业高效</p>
+                        <p class="p2">雷米域名经纪团队帮助买卖双方克服语言、文化等交易过程中各种障碍；积极市场调查，根据最直观的数据给客户最专业的建议。</p>
+                    </li>
+                    <li>
+                        <p class="p1">安全透明</p>
+                        <p class="p2">雷米域名经纪团队承诺在交易中仅代表买卖中一方，收费透明，合作前，我们会明确告知客户佣金收费比例；交易过程为双方实际报价。</p>
+                    </li>
+                    <li>
+                        <p class="p1">7*24小时</p>
+                        <p class="p2">雷米域名经纪团队提供一对一个性化服务，7*24小时随时待命，伴随您交易发展每一步，充分保障您的权益</p>
+                    </li>
+                    <li>
+                        <p class="p1">超低费用</p>
+                        <p class="p2">雷米承诺无差价，为买卖双方打造绿色交易环境，平台交易成功后仅收取超低手续费。</p>
+                    </li>                                
+                </ul>                
+            </div>
+        </div>
+    </div>
+    <!-- 我们的优势 end -->
+
+    <!--我们的客户 start  -->
+    <div class="w_custom">
+        <div class="custom">
+            <div class="index_tit">
+                <h3><img src="style/images/index_tit2.png" alt="about-us"></h3>
+                <p class="tit_p">他们选择了我们</p>
+            </div>
+            <ul class="custom_con bbox clear">
+                <li><img src="style/images/custom-1.png" alt="客户"></li>
+                <li><img src="style/images/custom-2.png" alt="客户"></li>
+                <li><img src="style/images/custom-3.png" alt="客户"></li>
+                <li><img src="style/images/custom-4.png" alt="客户"></li>
+
+                <li><img src="style/images/custom-5.png" alt="客户"></li>
+                <li><img src="style/images/custom-6.png" alt="客户"></li>
+                <li><img src="style/images/custom-7.png" alt="客户"></li>
+                <li><img src="style/images/custom-8.png" alt="客户"></li>
+
+                <li><img src="style/images/custom-9.png" alt="客户"></li>
+                <li><img src="style/images/custom-10.png" alt="客户"></li>
+                <li><img src="style/images/custom-11.png" alt="客户"></li>
+                <li><img src="style/images/custom-12.png" alt="客户"></li>
+            </ul>        
+        </div>
+    </div>
+    <!-- 我们的客户 end -->
+
+    <!-- 经纪人 start -->
+    <div class="w_agent">
+        <div class="agent">
+            <div class="index_tit">
+                <h3><img src="style/images/index_tit3.png" alt="about-us"></h3>
+                <p class="tit_p">一对一经纪人</p>
+            </div>   
+            <div class="onForone_con">
+
+                <div class="picScroll_left">
+                    <div class="bd">
+                            <ul class="agent_con clear">
+                                <li>
+                                    <div class="agent_img">
+                                        <img src="style/images/jingjiren-1.png" alt="经纪人">
+                                        <div class="detail bbox">
+                                                <p class="tit">经纪简介：</p>
+                                                <p class="p_js">鱼的品牌背书等这里是小鱼的鱼的品牌背书等这里是小鱼的 经纪成就鱼的品牌背书等这里是小鱼的 经纪成就 经纪成就，小鱼的经验小鱼的 经纪成就，小鱼的经验小鱼的品牌背书等这里是小鱼……</p>
+                                                <div class="btn">
+                                                    <a class="go_btn">查看详情></a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="agent_info bbox">
+                                        <h4>小鱼</h4>
+                                        <p class="time">从业年限：6年  <span class="line">|</span>  案例数：88例</p>
+                                    </div>
+                                    <div class="rank">金牌经纪人</div>
+                                </li>
+
+                                <li>
+                                    <div class="agent_img">
+                                        <img src="style/images/jingjiren-1.png" alt="经纪人">
+                                        <div class="detail bbox">
+                                                <p class="tit">经纪简介：</p>
+                                                <p class="p_js">鱼的品牌背书等这里是小鱼的鱼的品牌背书等这里是小鱼的 经纪成就鱼的品牌背书等这里是小鱼的 经纪成就 经纪成就，小鱼的经验小鱼的 经纪成就，小鱼的经验小鱼的品牌背书等这里是小鱼……</p>
+                                                <div class="btn">
+                                                    <a class="go_btn">查看详情></a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="agent_info bbox">
+                                        <h4>小鱼</h4>
+                                        <p class="time">从业年限：6年  <span class="line">|</span>  案例数：88例</p>
+                                    </div>
+                                    <div class="rank">金牌经纪人</div>
+                                </li>
+
+                                <li>
+                                    <div class="agent_img">
+                                        <img src="style/images/jingjiren-1.png" alt="经纪人">
+                                        <div class="detail bbox">
+                                                <p class="tit">经纪简介：</p>
+                                                <p class="p_js">鱼的品牌背书等这里是小鱼的鱼的品牌背书等这里是小鱼的 经纪成就鱼的品牌背书等这里是小鱼的 经纪成就 经纪成就，小鱼的经验小鱼的 经纪成就，小鱼的经验小鱼的品牌背书等这里是小鱼……</p>
+                                                <div class="btn">
+                                                    <a class="go_btn">查看详情></a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="agent_info bbox">
+                                        <h4>小鱼</h4>
+                                        <p class="time">从业年限：6年  <span class="line">|</span>  案例数：88例</p>
+                                    </div>
+                                    <div class="rank">金牌经纪人</div>
+                                </li> 
+                                
+                                <li>
+                                    <div class="agent_img">
+                                        <img src="style/images/jingjiren-1.png" alt="经纪人">
+                                        <div class="detail bbox">
+                                                <p class="tit">经纪简介：</p>
+                                                <p class="p_js">鱼的品牌背书等这里是小鱼的鱼的品牌背书等这里是小鱼的 经纪成就鱼的品牌背书等这里是小鱼的 经纪成就 经纪成就，小鱼的经验小鱼的 经纪成就，小鱼的经验小鱼的品牌背书等这里是小鱼……</p>
+                                                <div class="btn">
+                                                    <a class="go_btn">查看详情></a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="agent_info bbox">
+                                        <h4>小鱼</h4>
+                                        <p class="time">从业年限：6年  <span class="line">|</span>  案例数：88例</p>
+                                    </div>
+                                    <div class="rank">金牌经纪人</div>
+                                </li> 
+
+                            </ul>
+                    </div>
+                    
+    
+                    <div class="hd">
+                        <a class="next"></a>
+                        <!-- <ul><li class="on">1</li><li class="">2</li></ul> -->
+                        <a class="prev"></a>
+                    </div>
+    
+                </div>
+
+            </div>     
+        </div>
+    </div>
+    <!--  经纪人 end  -->
+<script>
+$(function(){
+    jQuery(".picScroll_left").slide({
+        titCell: ".hd ul",
+        mainCell: ".bd ul",
+        autoPage: true,
+        effect: "leftLoop",
+        pnLoop: "true",
+        autoPlay: true,
+        vis: 4
+    });    
+});
+</script>
+
+
+    <!-- 域名精选 start -->
+    <div class="w_domainSelect">
+        <div class="domainSelect">
+            <div class="index_tit">
+                <h3><img src="style/images/index_tit4.png" alt="about-us"></h3>
+                <p class="tit_p">精选域名</p>
+            </div>              
+            <ul class="domainSelect_con bbox clear">
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+                <li><a href="javascript:void(0);" target="_blank;">juming.com</a></li>
+            </ul>
+            <a class="domainSelect_more" href="javascript:void(0);" target="_blank">更多域名></a>
+        </div>
+    </div>
+    <!-- 域名精选 end -->
+
+    <!-- 域名领域 start -->
+    <div class="w_field">
+        <div class="field">
+            <div class="index_tit">
+                <h3><img src="style/images/index_tit5.png" alt="about-us"></h3>
+                <p class="tit_p">域名领域</p>
+            </div>  
+            <div class="field_con bbox clear">
+
+                <div class="wrap" id="wrap">
+                    <ul class="content"></ul>
+                    <a href="javascript:;" class="prev2">&#60;</a>
+                    <a href="javascript:;" class="next2">&#62;</a>
+                </div>
+
+
+            </div>           
+        </div>
+    </div>
+    <!-- 域名领域 end -->
+
+
+    
+
+
+
+    <!-- 域名资讯 start -->
+    <div class="w_news">
+        <div class="index_news_list">
+            <div class="index_tit">
+                <h3><img src="style/images/index_tit6.png" alt="about-us"></h3>
+                <p class="tit_p">精选域名</p>
+            </div>               
+            <ul class="index_news_con bbox clear">
+                <li>
+                    <a href="javascript:void(0);" target="_blank">
+                        <img src="style/images/news.png" alt="新闻">
+                        <div class="news_detail">
+                            <p class="time">2019-7-16</p>
+                            <h3 class="tit">经纪人穿针引线！让终端米回归终端</h3>
+                            <p class="desc">在域名市场，一枚域名想要遇上合适的终端是需要缘分的，一个终端想要拿到心仪的终端米…</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="_blank">
+                        <img src="style/images/news.png" alt="新闻">
+                        <div class="news_detail">
+                            <p class="time">2019-7-16</p>
+                            <h3 class="tit">经纪人穿针引线！让终端米回归终端</h3>
+                            <p class="desc">在域名市场，一枚域名想要遇上合适的终端是需要缘分的，一个终端想要拿到心仪的终端米…</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="_blank">
+                        <img src="style/images/news.png" alt="新闻">
+                        <div class="news_detail">
+                            <p class="time">2019-7-16</p>
+                            <h3 class="tit">经纪人穿针引线！让终端米回归终端</h3>
+                            <p class="desc">在域名市场，一枚域名想要遇上合适的终端是需要缘分的，一个终端想要拿到心仪的终端米…</p>
+                        </div>
+                    </a>
+                </li>                
+            </ul>
+            <a class="domainSelect_more" href="javascript:void(0);" target="_blank">更多资讯></a>
+        </div>
+    </div>
+    <!-- 域名资讯 end -->
+
+    <!-- 底部 start -->
+    <div class="footer">
+        <div class="footer_con bbox clear">
+                <div class="footer_list fl">
+                    <h4>帮助中心</h4>
+                    <ul class="help_list clear">
+                        <li><a href="javascript:void(0);" target="_blank">常见问题</a></li>
+                        <li><a href="javascript:void(0);" target="_blank">我是卖家</a></li>
+                        <li><a href="javascript:void(0);" target="_blank">行业资讯</a></li>
+                        <li><a href="javascript:void(0);" target="_blank">我是买家</a></li>
+                        <li><a href="javascript:void(0);" target="_blank">服务协议</a></li>
+                    </ul>
+                    <p class="adr">地址：合肥市政务区置地广场C座29层（安徽电视台正对面）</p>
+                    <p class="copyright">COPYRIGHT (©) 2019 合肥寻云网络科技有限公司 营业执照 雷米网 , All Rights Reserved 皖B2-20160079-21</p>
+                </div>
+                <div class="footer_right fr">
+                    <ul class="footer_right_ul bbox clear">
+                        <li>
+                            <div class="code"><img src="style/images/code.png" alt="code"></div>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <a class="online_btn">在线提交需求</a>
+                </div>            
+        </div>
+    </div>
+    <!-- 底部 end -->
+
+    
+                            
+</body>
+</html>
+                                            
