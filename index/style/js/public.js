@@ -13,8 +13,6 @@ $(window).scroll(function(){
     }
 });
 
-
-
 $(function(){
     // 首页banner上tab切换
     $('.tab_tit>li').click(function(){
