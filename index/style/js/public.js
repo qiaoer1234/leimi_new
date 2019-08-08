@@ -1,3 +1,20 @@
+// 顶部导航判断
+$(window).scroll(function(){
+    // 滚动条距离顶部的距离 大于 200px时
+    if($(window).scrollTop() >= 90){
+
+        var id = $(this).data("id");
+
+        $('.nav').addClass("active").siblings().removeClass("active");
+
+    } else{
+        $('.nav').removeClass("active");
+
+    }
+});
+
+
+
 $(function(){
     // 首页banner上tab切换
     $('.tab_tit>li').click(function(){
